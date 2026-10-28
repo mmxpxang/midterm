@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <title>My favorite game</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="นี่คือเกมที่ชื่นชอบที่รวบรวมมาเกมเหล่านี้คือเกมเนื้อเรื่องที่ดีที่สุด" />
+    <link rel="preload" href="assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/icons.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body id="top">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-light" aria-label="เมนูหลัก">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My favorite game</a>
+                
+                <button class="navbar-toggler" type="button"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="เปิดเมนู">
+                    <i class="icon" data-lucide="menu" aria-hidden="true"></i>
+                </button>
+
+                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="mainNav" aria-labelledby="menuTitle">
+                    
+                    <div class="offcanvas-header">
+                        <span id="menuTitle">My favorite game</span>
+                        <button class="menu-close" type="button"
+                            aria-label="ปิดเมนู">
+                            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="story.html">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Collection.html">Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-contact">
+                            <a class="menu-email email-link" href="mailto:hello@example.com">
+                                <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                                <span>hello@example.com</span>
+                            </a>
+                            <div class="menu-socials">
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="home-hero container">
+            <div class="row hero-row">
+                <div class="col-lg-6 hero-copy">
+                    <h1>My favorite<br /><em>game</em></h1>
+                    <p class="hero-description">นี่คือเกมที่ชื่นชอบที่รวบรวมมาเกมเหล่านี้คือเกมเนื้อเรื่องที่ดีที่สุด</p>
+                    <a class="btn btn-dark" href="Collection.html">
+                        Explore the games
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6 hero-art" aria-label="ปกเกมที่ชื่นชอบ">
+                    <img class="hero-books" src="images/games/ghost-of-tsushima-360.webp" alt="ปกเกม Ghost of Tsushima" width="600" height="900" decoding="async" sizes="(max-width: 767px) 180px, (max-width: 991px) 200px, 280px" srcset="images/games/ghost-of-tsushima-360.webp 360w, images/games/ghost-of-tsushima-480.webp 480w, images/games/ghost-of-tsushima.webp 600w" fetchpriority="high" />
+                    <img class="hero-records" src="images/games/god-of-war-360.webp" alt="ปกเกม God of War" width="736" height="1103" decoding="async" sizes="(max-width: 767px) 180px, (max-width: 991px) 200px, 280px" srcset="images/games/god-of-war-360.webp 360w, images/games/god-of-war-480.webp 480w, images/games/god-of-war.webp 736w" />
+                    <img class="hero-camera" src="images/games/elden-ring-360.webp" alt="ปกเกม Elden Ring" width="736" height="1104" decoding="async" sizes="(max-width: 767px) 180px, (max-width: 991px) 200px, 280px" srcset="images/games/elden-ring-360.webp 360w, images/games/elden-ring-480.webp 480w, images/games/elden-ring.webp 736w" />
+                </div>
+            </div>
+        </section>
+        <section class="home-links container">
+            <div class="row gx-lg-5 gy-5">
+                <div class="col-md-7">
+                    <a class="story-preview" href="story.html">
+                        <div class="preview-heading">
+                            <h2>A story<br /><em>game</em></h2>
+                            <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                        </div>
+                        <img class="preview-image" src="images/games/death-stranding-360.webp" alt="ปกเกม Death Stranding" width="736" height="1104" decoding="async" sizes="(max-width: 767px) 220px, (max-width: 991px) 270px, 360px" srcset="images/games/death-stranding-360.webp 360w, images/games/death-stranding-480.webp 480w, images/games/death-stranding.webp 736w" loading="lazy" />
+                    </a>
+                </div>
+                <div class="col-md-5 home-note">
+                    <h2>Stories worth<br /><em>playing.</em></h2>
+                    <p>บางเกมทำให้เราอยากรู้ว่าจะเกิดอะไรขึ้นต่อ บางเกมพาไปเจอโลกที่ไม่เคยเห็น ที่นี่คือคอลเล็กชันเกมโปรดที่อยากเก็บเรื่องราวและตัวละครเอาไว้ในความทรงจำ</p>
+                    <a class="text-link" href="About.html">
+                        About the collection
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        
+        <div class="footer-main">
+            
+            <a class="footer-brand" href="index.html">
+                My favorite game
+            </a>
+            
+            <nav aria-label="เมนูท้ายหน้า">
+                <h2>Navigation</h2>
+                <a href="index.html">Home</a>
+                <a href="story.html">Story</a>
+                <a href="Collection.html">Collection</a>
+                <a href="About.html">About</a>
+            </nav>
+            
+            <div class="footer-contact">
+                <h2>Contact</h2>
+                
+                <a href="mailto:hello@example.com">
+                    <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                    <span>hello@example.com</span>
+                </a>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                        Behance
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 My favorite game</span>
+            <a href="#top">
+                Back to top
+                <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

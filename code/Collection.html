@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="th">
+
+<head>
+    <title>Collection | My favorite game</title>
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="นี่คือเกมที่ชื่นชอบที่รวบรวมมาเกมเหล่านี้คือเกมเนื้อเรื่องที่ดีที่สุด" />
+    <link rel="preload" href="assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/icons.js" defer></script>
+    <script src="js/games.js" defer></script>
+    <script src="js/collection.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+
+<body id="top">
+    <a class="skip-link" href="#main">ข้ามไปเนื้อหา</a>
+
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-light" aria-label="เมนูหลัก">
+            
+            <div class="container">
+                <a class="navbar-brand" href="index.html">My favorite game</a>
+                
+                <button class="navbar-toggler" type="button"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="เปิดเมนู">
+                    <i class="icon" data-lucide="menu" aria-hidden="true"></i>
+                </button>
+
+                <div class="offcanvas-md offcanvas-end" tabindex="-1" id="mainNav" aria-labelledby="menuTitle">
+                    
+                    <div class="offcanvas-header">
+                        <span id="menuTitle">My favorite game</span>
+                        <button class="menu-close" type="button"
+                            aria-label="ปิดเมนู">
+                            <i class="icon" data-lucide="x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="story.html">Story</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="Collection.html" aria-current="page">Collection</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html">About</a>
+                            </li>
+                        </ul>
+
+                        <div class="mobile-contact">
+                            <a class="menu-email email-link" href="mailto:hello@example.com">
+                                <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                                <span>hello@example.com</span>
+                            </a>
+                            <div class="menu-socials">
+                                <a href="https://www.instagram.com/" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <main id="main" tabindex="-1">
+        <section class="collection-intro container">
+            <h1>A story<br /><em>game</em></h1>
+            <p class="collection-description">นี่คือเกมที่ชื่นชอบที่รวบรวมมาเกมเหล่านี้คือเกมเนื้อเรื่องที่ดีที่สุด</p>
+        </section>
+        <section class="board-section" aria-label="คอลเล็กชันเกมที่ชื่นชอบ">
+            <div class="board-toolbar container">
+                <p class="collection-count">16 games · Stories worth playing</p>
+                <div class="board-navigation">
+                    <button class="motion-control" id="board-pause" type="button" aria-label="หยุดการเลื่อน" aria-pressed="false">
+                        <i class="icon" data-lucide="pause" aria-hidden="true"></i><span>Pause</span>
+                    </button>
+                    <button class="motion-control" id="board-prev" type="button" aria-label="เลื่อนภาพก่อนหน้า">
+                        <i class="icon" data-lucide="arrow-left" aria-hidden="true"></i><span>Previous</span>
+                    </button>
+                    <button class="motion-control" id="board-next" type="button" aria-label="เลื่อนภาพถัดไป">
+                        <span>Next</span><i class="icon" data-lucide="arrow-right" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="board-viewport" id="board-viewport" role="region" aria-label="ภาพปกเกมในคอลเล็กชัน">
+                <div class="collage-board"><div class="collection-group"></div></div>
+            </div>
+            <noscript><p class="container">กรุณาเปิด JavaScript เพื่อดูรายชื่อเกมในคอลเล็กชัน</p></noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        
+        <div class="footer-main">
+            
+            <a class="footer-brand" href="index.html">
+                My favorite game
+            </a>
+            
+            <nav aria-label="เมนูท้ายหน้า">
+                <h2>Navigation</h2>
+                <a href="index.html">Home</a>
+                <a href="story.html">Story</a>
+                <a href="Collection.html">Collection</a>
+                <a href="About.html">About</a>
+            </nav>
+            
+            <div class="footer-contact">
+                <h2>Contact</h2>
+                
+                <a href="mailto:hello@example.com">
+                    <i class="icon" data-lucide="mail" aria-hidden="true"></i>
+                    <span>hello@example.com</span>
+                </a>
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        Instagram
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                        Behance
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                        <i class="icon" data-lucide="arrow-up-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <span>© 2026 My favorite game</span>
+            <a href="#top">
+                Back to top
+                <i class="icon" data-lucide="arrow-up" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

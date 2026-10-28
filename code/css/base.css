@@ -1,0 +1,45 @@
+/* Only the layout utilities used by this small static site. */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+button, a { -webkit-tap-highlight-color: transparent; }
+img, svg { vertical-align: middle; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+.container { width: 100%; margin-inline: auto; }
+.row { --gutter-x: 24px; --gutter-y: 0px; display: flex; flex-wrap: wrap; margin: calc(-1 * var(--gutter-y)) calc(-.5 * var(--gutter-x)) 0; }
+.row > * { flex: 0 0 auto; width: 100%; padding-inline: calc(.5 * var(--gutter-x)); margin-top: var(--gutter-y); }
+.gy-4 { --gutter-y: 24px; }
+.gy-5 { --gutter-y: 48px; }
+.align-items-center { align-items: center; }
+.ms-auto { margin-left: auto; }
+.img-fluid { max-width: 100%; height: auto; }
+.py-5 { padding-block: 48px; }
+.navbar { display: flex; align-items: center; }
+.navbar > .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; }
+.navbar-nav { display: flex; padding: 0; margin-block: 0; list-style: none; }
+.offcanvas-md, .offcanvas-body { display: flex; }
+.offcanvas-header, .navbar-toggler { display: none; }
+.nav-link { display: block; }
+@media (min-width: 768px) {
+  .col-md-5 { width: 41.666667%; }
+  .col-md-6 { width: 50%; }
+  .col-md-7 { width: 58.333333%; }
+}
+@media (min-width: 992px) {
+  .col-lg-5 { width: 41.666667%; }
+  .col-lg-6 { width: 50%; }
+  .col-lg-7 { width: 58.333333%; }
+  .gx-lg-5 { --gutter-x: 48px; }
+}
+@media (max-width: 767px) {
+  .navbar-toggler { display: inline-flex; align-items: center; justify-content: center; }
+  .navbar-nav { flex-direction: column; }
+  .offcanvas-header { display: flex; }
+  .offcanvas-md { position: fixed; inset: 0; z-index: 1100; flex-direction: column; visibility: hidden; transform: translateX(100%); background: white; transition: transform 180ms ease, visibility 180ms; }
+  .offcanvas-md.show { visibility: visible; transform: translateX(0); transition: transform 180ms ease; }
+  .offcanvas-body { flex: 1; min-height: 0; overflow-y: auto; }
+  .nav-open { overflow: hidden; }
+}
